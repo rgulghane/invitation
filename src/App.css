@@ -1,0 +1,299 @@
+@import url(./styles/animations.css);
+@import url(./styles/slides.css);
+@import url(./styles/couple.css);
+@import url(./styles/lovestory.css);
+@import url(./styles/event.css);
+@import url(./styles/people.css);
+@import url(./styles/gallery.css);
+@import url(./styles/responsive.css);
+/* @import url(./styles/balloon.css); */
+@import url(./Themes/pink.css);
+
+.envelope-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #b784db;
+}
+
+.envelope {
+  position: relative;
+  cursor: pointer;
+}
+
+.back {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  background: #6247aa;
+}
+
+.front {
+  position: absolute;
+  border-right: 130px solid #815ac0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 120px;
+  z-index: 3;
+}
+
+.front:before {
+  content: "";
+  position: absolute;
+  border-left: 130px solid #815ac0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  height: 0;
+  width: 0;
+  top: -100px;
+  left: -120px;
+}
+
+.front:after {
+  content: "";
+  position: absolute;
+  border-bottom: 105px solid #7251b5;
+  border-right: 125px solid transparent;
+  border-left: 125px solid transparent;
+  height: 0;
+  width: 0;
+  top: -5px;
+  left: -120px;
+}
+
+.top {
+  position: absolute;
+  border-top: 105px solid #9163cb;
+  border-right: 125px solid transparent;
+  border-left: 125px solid transparent;
+  height: 0;
+  width: 0;
+  top: 0;
+  transform-origin: top;
+  transition: 0.4s;
+}
+
+.envelope:hover .top {
+  transform: rotateX(160deg);
+}
+
+.letter {
+  position: absolute;
+  background: #fff;
+  height: 180px;
+  width: 230px;
+  top: 10px;
+  left: 10px;
+  transition: 0.2s;
+}
+
+.envelope:hover .letter {
+  transform: translateY(-100px);
+  z-index: 2;
+}
+
+/* Heart */
+.heart {
+  background-color: red;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  transform: rotate(-45deg);
+  box-shadow: -5px 10px 90px red;
+}
+.heart:before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  height: 60px;
+  width: 60px;
+  top: -30px;
+  border-radius: 30px;
+}
+.heart::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  height: 60px;
+  width: 60px;
+  left: 30px;
+  border-radius: 30px;
+}
+
+/* main-container */
+
+.main-container {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.main-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+header,
+section,
+footer {
+  display: block;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header.fixed {
+  background-color: white;
+  box-shadow: 0 0 8px #ccc;
+}
+
+.header .logo {
+  padding: 0 15px;
+}
+
+.header .hamburger-btn {
+  display: inline-block;
+  height: 34px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.header.fixed .hamburger-btn {
+  border-color: black;
+  background-color: black;
+}
+
+/* header .hamburger-btn.show {
+  display: flex;
+} */
+
+.header .hamburger-btn span {
+  display: block;
+  height: 1px;
+  width: 16px;
+  background-color: white;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.header.fixed .hamburger-btn span,
+.header.fixed .hamburger-btn span::before,
+.header.fixed .hamburger-btn span::after {
+  background-color: white;
+}
+
+.header .hamburger-btn span::before,
+.header .hamburger-btn span::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+.header .hamburger-btn span::before {
+  top: -6px;
+}
+
+.header .hamburger-btn span::after {
+  top: 6px;
+}
+
+.header .logo a {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.header.fixed .logo a {
+  color: black;
+}
+
+.header .nav {
+  padding: 0 15px;
+}
+
+.header .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header .nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.header.fixed .nav ul li a {
+  color: #555;
+}
+.header .nav ul li a {
+  display: block;
+  padding: 5px 0;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+/* //  Home Section */

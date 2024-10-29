@@ -1,0 +1,29 @@
+:root {
+  --theme-color: #fb839e;
+}
+
+.people-section .people-item-inner .social-links a .social-icon,
+.event-section .event-item-inner span,
+.love-story-section .story-item .heart-icon,
+.love-story-section .story-text h3,
+.couple-section .couple h3,
+.header .nav ul li a:active,
+.header .nav ul li a:hover {
+  color: var(--theme-color);
+}
+
+.people-section .people-item-inner .social-links a .social-icon,
+.event-section .event-item-inner::before,
+.couple-section .couple img {
+  border-color: var(--theme-color);
+}
+
+.people-section .people-item-inner .social-links a:hover .social-icon,
+.people-section .people-filter .filter-btn.active,
+.event-container {
+  background-color: var(--theme-color);
+}
+
+.couple-section .couple .heart-icon {
+  color: red;
+}

@@ -1,0 +1,98 @@
+.love-story-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.love-story-section .story-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.love-story-section .story-content::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  background-color: #ccc;
+}
+
+.love-story-section .story-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.love-story-section .story-item:last-child {
+  margin-bottom: 0;
+}
+
+.love-story-section .story-item .heart-icon {
+  position: absolute;
+  left: 50%;
+  width: 31px;
+  padding: 15px;
+  top: 20px;
+  text-align: center;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+.love-story-section .story-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.love-story-section .story-item:nth-child(even) .story-text {
+  text-align: left;
+  padding: 0 15px 0 60px;
+}
+
+.love-story-section .story-item:nth-child(even) .story-img {
+  padding: 0 60px 0 15px;
+}
+
+.love-story-section .story-item:nth-child(odd) .story-text {
+  text-align: right;
+  padding: 0 60px 0 15px;
+}
+
+.love-story-section .story-item:nth-child(odd) .story-img {
+  padding: 0 15px 0 60px;
+}
+
+.love-story-section .story-text,
+.love-story-section .story-img {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.love-story-section .story-text h3 {
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.love-story-section .story-text span.date {
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 15px;
+  display: block;
+  text-transform: capitalize;
+}
+.love-story-section .story-text p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #555;
+  margin: 0;
+}

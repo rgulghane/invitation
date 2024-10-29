@@ -1,0 +1,101 @@
+.people-section {
+  min-height: 100vh;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 80px 0 80px;
+  background-color: #f7f7f7;
+}
+
+.people-section .people-filter {
+  padding: 0 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.people-section .people-filter .filter-btn {
+  background-color: #dedede;
+  color: #555;
+  padding: 8px 16px;
+  display: inline-block;
+  margin: 0 4px;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.people-section .people-filter .filter-btn.active {
+  color: #fff;
+}
+
+.people-section .people-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 16px;
+  margin-top: 24px;
+}
+
+.people-section .people-item-inner {
+  background-color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+.people-section .people-item-inner img {
+  width: 100%;
+  box-shadow: 0 0 10px #ccc;
+  margin-top: -40px;
+  transition: all 0.5s ease;
+}
+
+.people-section .people-item-inner img:hover {
+  transform: scale(0.95);
+}
+
+.people-section .people-item-inner h4 {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  margin: 20px 0 5px;
+  text-transform: capitalize;
+}
+
+.people-section .people-item-inner p {
+  font-size: 16px;
+  color: #555;
+  margin: 0 0 10px;
+}
+
+.people-section .people-item-inner .social-links {
+  text-align: center;
+}
+
+.people-section .people-item-inner .social-links span {
+  display: inline-block;
+  margin: 0 4px;
+  height: 32px;
+  width: 32px;
+  text-decoration: none;
+}
+
+.people-section .people-item-inner .social-links span .social-icon {
+  padding: 8px;
+  height: 16px;
+  width: 16px;
+  border: 1px solid transparent;
+  display: block;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.people-section .people-item-inner .social-links a:hover .social-icon {
+  color: white;
+}
+
+.friends-wrapper.active {
+  animation: fadeInTop 1s ease forwards;
+}
