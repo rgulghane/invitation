@@ -29,9 +29,7 @@ export default function Home() {
   };
 
   const scrollToDiv = (divId) => {
-    console.log(divId);
-    const divRef = sectionRefMap[divId] || sectionRefMap[SectionIdMap.SLIDE];
-    console.log(divRef);
+    const divRef = sectionRefMap[divId];
 
     if (divRef.current) {
       setTimeout(() => {
@@ -57,6 +55,14 @@ export default function Home() {
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    const divRef = sectionRefMap[SectionIdMap.SLIDE];
+
+    if (divRef.current) {
+      setTimeout(() => {
+        divRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -74,7 +80,7 @@ export default function Home() {
               <a href="http://">R & K</a>
             </div>
             <div
-              className={"hamburger-btn " + (showHamburger ? "show" : "")}
+              className={"hamburger-btn " + (showHamburger && "show")}
               onClick={() => toggleHamburger()}
             >
               <span></span>

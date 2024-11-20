@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fba7f762.css",
+    "main.js": "/static/js/main.f71090a4.js",
+    "static/js/453.78bb924c.chunk.js": "/static/js/453.78bb924c.chunk.js",
+    "static/media/2.jpg": "/static/media/2.9759e58eeecb9958a5c0.jpg",
+    "static/media/slide-2.jpg": "/static/media/slide-2.ce15825a3df513b367d1.jpg",
+    "static/media/slide-1.jpg": "/static/media/slide-1.c089fd8969aae19dfe93.jpg",
+    "static/media/slide-3.jpg": "/static/media/slide-3.bfcfa7fa3bc236865c05.jpg",
+    "static/media/6.jpg": "/static/media/6.764f3f08b52557882d1f.jpg",
+    "static/media/3.jpg": "/static/media/3.9f685300dd33cdc75b4b.jpg",
+    "static/media/5.jpg": "/static/media/5.96d57c7ae18e295a7749.jpg",
+    "static/media/1.jpg": "/static/media/1.ed4b04da2ada12df3d3d.jpg",
+    "static/media/4.jpg": "/static/media/4.fb91cc93436081c8a70c.jpg",
+    "static/media/story-1.jpg": "/static/media/story-1.7d1f999b88ea74fa5b41.jpg",
+    "static/media/story-3.jpg": "/static/media/story-3.4f653ba21d077b3d364b.jpg",
+    "static/media/bride.jpg": "/static/media/bride.f1d65a24460c71b443e9.jpg",
+    "static/media/story-4.jpg": "/static/media/story-4.4d3c673c3fe4af0b3170.jpg",
+    "static/media/groom.jpg": "/static/media/groom.6cdc027350765dcb403c.jpg",
+    "static/media/story-2.jpg": "/static/media/story-2.e7efda3ff66e5975269f.jpg",
+    "static/media/flower.svg": "/static/media/flower.0c25db74841a3b56132dde116e2e82be.svg",
+    "index.html": "/index.html",
+    "main.fba7f762.css.map": "/static/css/main.fba7f762.css.map",
+    "main.f71090a4.js.map": "/static/js/main.f71090a4.js.map",
+    "453.78bb924c.chunk.js.map": "/static/js/453.78bb924c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fba7f762.css",
+    "static/js/main.f71090a4.js"
+  ]
+}
